@@ -1,5 +1,7 @@
 {
-    "name": "lyrixx/phpbench-test",
+    "name": "lyrixx/personal-php-benchmarck",
+    "description": "Personal PHP benchmarck",
+    "license": "MIT",
     "require-dev": {
         "phpbench/phpbench": "^1.0@dev"
     },
