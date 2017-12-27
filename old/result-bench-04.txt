@@ -1,0 +1,18 @@
+5.3.17-1~dotdeb.0
+[in_array        ] : 635.614110 
+[isset           ] : 1.000000 
+[array_key_exists] : 3.275343 
+
+
+5.2.17-0.dotdeb.0
+[in_array        ] : 1029.341540 
+[isset           ] : 1.000000 
+[array_key_exists] : 3.287562 
+
+
+5.4.7-1~dotdeb.0
+[in_array        ] : 747.249286
+[isset           ] : 1.000000
+[array_key_exists] : 3.251335
+
+

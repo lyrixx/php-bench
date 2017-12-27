@@ -1,0 +1,18 @@
+5.2.17-0.dotdeb.0
+[attribute ] : 1.000000
+[both      ] : 2.716186
+[construct ] : 3.083696
+
+
+5.3.6
+[attribute ] : 1.000000
+[both      ] : 2.975947
+[construct ] : 3.356322
+
+
+5.4.7-1~dotdeb.0
+[attribute ] : 1.000000
+[both      ] : 3.110702
+[construct ] : 3.571433
+
+
