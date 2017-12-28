@@ -6,4 +6,4 @@
 
 ## Execution
 
-    vendor/bin/phpbench run --report=aggregate
+    vendor/bin/phpbench run --report='generator: "table", cols: ["subject", "mean", "diff"]'
