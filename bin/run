@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASE=$(dirname $0)/..
+
+if [[ -f $1 ]]; then
+    FILE=$1
+else
+    CLASS=$1
+    FILE="$BASE/benchmarks/$CLASS.php"
+
+    if [[ ! -f $FILE ]]; then
+        echo "The class '$CLASS' does not exist"
+        exit 1
+    fi
+fi
+
+vendor/bin/phpbench run $FILE --report='{"extends": "aggregate", "cols": ["subject", "mean", "diff"]}'

@@ -4,6 +4,8 @@
 
     composer install
 
-## Execution
+## Usage
 
-    vendor/bin/phpbench run --report='generator: "table", cols: ["subject", "mean", "diff"]'
+    bin/run benchmarks/IssetVsArrayKeyExistBench.php
+    # or
+    bin/run IssetVsArrayKeyExistBench
