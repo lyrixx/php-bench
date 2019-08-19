@@ -21,12 +21,12 @@ class IssetVsArrayKeyExistBench
     public function benchAkeKO()
     {
         $a = [];
-        array_key_exists('nope', $a) && $a['nope'] !== null;
+        \array_key_exists('nope', $a) && $a['nope'] !== null;
     }
 
     public function benchAkeOK()
     {
         $a = ['yop' => true];
-        array_key_exists('yop', $a) && $a['yop'] !== null;
+        \array_key_exists('yop', $a) && $a['yop'] !== null;
     }
 }
