@@ -2,7 +2,7 @@
     "name": "lyrixx/personal-php-benchmarck",
     "description": "Personal PHP benchmarck",
     "license": "MIT",
-    "require-dev": {
+    "require": {
         "phpbench/phpbench": "^1.0@dev"
     },
     "autoload": {
