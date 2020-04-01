@@ -27,7 +27,7 @@ class Processor
         }
         if ('exception' === $this->type) {
             try {
-                return $this->processor->process();;
+                return $this->processor->process();
             } catch (\LogicException $e) {
                 return null;
             }

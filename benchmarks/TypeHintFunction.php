@@ -1,7 +1,5 @@
 <?php
 
-use App\Processor;
-
 /**
  * @Revs(1000000)
  * @Iterations(5)
@@ -21,10 +19,8 @@ class TypeHintFunction
 
 function with_type_hint(string $a)
 {
-
 }
 
 function without_type_hint($a)
 {
-
 }

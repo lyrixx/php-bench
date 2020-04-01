@@ -1,7 +1,5 @@
 <?php
 
-use App\Processor;
-
 /**
  * @Revs(1000000)
  * @Iterations(5)
@@ -37,5 +35,4 @@ function with_variadic($a, $b, $message, ...$args)
 function without_variadic($a, $b, $message)
 {
     3 < func_num_args() ? sprintf($message, array_slice(func_get_args(), 3)) : $message;
-
 }

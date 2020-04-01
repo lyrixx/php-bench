@@ -3,7 +3,7 @@
 /**
  * @Revs(10000)
  * @Iterations(5)
-* @BeforeMethods({"init"})
+ * @BeforeMethods({"init"})
  */
 class HashBench
 {

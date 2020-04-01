@@ -12,7 +12,7 @@ class ArrayUniqueVsFlip
     public function init()
     {
         $this->array = [];
-        for ($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 1000; ++$i) {
             $this->array[] = random_int(0, 1000);
         }
     }

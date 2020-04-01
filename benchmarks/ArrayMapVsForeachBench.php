@@ -20,21 +20,19 @@ class ArrayMapVsForeachBench
         $delimiter = ',';
 
         return array_map(function ($language) use ($baseHeader, $delimiter) {
-            return $baseHeader . $delimiter . $language;
+            return $baseHeader.$delimiter.$language;
         }, $this->array);
     }
 
     public function benchArrayMapWithoutUse()
     {
-
         return array_map(function ($language) {
-            return 'base' . ',' . $language;
+            return 'base'.','.$language;
         }, $this->array);
     }
 
     public function benchArrayMapWithoutUseAndStringInterpolation()
     {
-
         return array_map(function ($language) {
             return "base,$language";
         }, $this->array);
@@ -45,9 +43,9 @@ class ArrayMapVsForeachBench
         $baseHeader = 'base';
         $delimiter = ',';
 
-        $ret = array();
+        $ret = [];
         foreach ($this->array as $language) {
-            $ret[] = $baseHeader . $delimiter . $language;
+            $ret[] = $baseHeader.$delimiter.$language;
         }
 
         return $ret;
@@ -58,7 +56,7 @@ class ArrayMapVsForeachBench
         $baseHeader = 'base';
         $delimiter = ',';
 
-        $ret = array();
+        $ret = [];
         foreach ($this->array as $language) {
             $ret[] = "$baseHeader$delimiter$language";
         }
