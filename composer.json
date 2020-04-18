@@ -3,7 +3,8 @@
     "description": "Personal PHP benchmarck",
     "license": "MIT",
     "require": {
-        "phpbench/phpbench": "^1.0@dev"
+        "phpbench/phpbench": "^1.0@dev",
+        "symfony/polyfill-php80": "^1.15"
     },
     "autoload": {
         "psr-4": {
