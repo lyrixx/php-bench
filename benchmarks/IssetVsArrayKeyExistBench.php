@@ -29,4 +29,16 @@ class IssetVsArrayKeyExistBench
         $a = ['yop' => true];
         \array_key_exists('yop', $a) && null !== $a['yop'];
     }
+
+    public function benchNullCoalescingKO()
+    {
+        $a = [];
+        $a['nope'] ?? null;
+    }
+
+    public function benchNullCoalescingOK()
+    {
+        $a = ['yop' => true];
+        $a['nope'] ?? null;
+    }
 }
