@@ -1,4 +1,4 @@
-# Personal PHP benchmarck
+# Personal PHP benchmarks
 
 ## Installation
 
