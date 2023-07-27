@@ -19,40 +19,36 @@ class Cast
     public function benchWithNullAndCast()
     {
         if ($this->nullData) {
-
         }
     }
 
     public function benchWithNullAndSame()
     {
         if (null !== $this->nullData) {
-
         }
     }
 
     public function benchWithNullAndInstanceOf()
     {
-        if ($this->nullData instanceof \DateTime) {
+        if ($this->nullData instanceof DateTime) {
         }
     }
 
     public function benchWithObjAndCast()
     {
         if ($this->objData) {
-
         }
     }
 
     public function benchWithObjAndSame()
     {
         if (null !== $this->objData) {
-
         }
     }
 
     public function benchWithObjAndInstanceOf()
     {
-        if ($this->objData instanceof \DateTime) {
+        if ($this->objData instanceof DateTime) {
         }
     }
 }
