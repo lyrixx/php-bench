@@ -4,6 +4,11 @@ set -e
 
 BASE=$(dirname $0)/..
 
+if [[ -z $1 ]]; then
+    echo "Usage: $0 [class|file]"
+    exit 1
+fi
+
 if [[ -f $1 ]]; then
     FILE=$1
 else
@@ -16,4 +21,4 @@ else
     fi
 fi
 
-vendor/bin/phpbench run $FILE --report='{"extends": "aggregate", "cols": ["subject", "mean", "diff"]}'
+vendor/bin/phpbench run $FILE --report='{"extends": "aggregate", "cols": ["subject", "mean", "mem_peak"]}'
