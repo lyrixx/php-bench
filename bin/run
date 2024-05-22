@@ -21,4 +21,5 @@ else
     fi
 fi
 
-vendor/bin/phpbench run $FILE --report='{"extends": "aggregate", "cols": ["subject", "mean", "mem_peak"]}'
+vendor/bin/phpbench run $FILE --report='{"extends": "aggregate", "cols": ["mean", "mem_peak", "set", "subject"]}'
+
